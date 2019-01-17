@@ -1,0 +1,42 @@
+spring.datasource.url: jdbc:h2:mem:testdb
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: sa
+spring.datasource.password:
+
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+hibernate.hbm2ddl.auto: create-drop
+
+logging.level.org.hibernate: DEBUG
+
+
+#hibernate.discriminator.ignore_explicit_for_joined: true
+#
+#hibernate.enhancer.enableDirtyTracking: true"
+#hibernate.enhancer.enableLazyInitialization: false
+#hibernate.enhancer.enableAssociationManagement: false
+#hibernate.bytecode.use_reflection_optimizer: true
+
+hibernate.show_sql: true
+spring:
+  jpa:
+    open-in-view: false
+hibernate.format_sql: true
+hibernate.use_sql_comments: true
+
+hibernate.cache.use_second_level_cache: true
+hibernate.cache.use_query_cache: true
+hibernate.cache.use_minimal_puts: true
+hibernate.cache.use_structured_entries: true
+
+hibernate.default_batch_fetch_size: 64
+hibernate.jdbc.batch_size: 100
+hibernate.jdbc.fetch_size: 100
+hibernate.jdbc.batch_versioned_data: false
+hibernate.order_inserts: true
+hibernate.order_updates: true
+
+hibernate.generate_statistics: false
+
+hibernate.connection.useUnicode: true
+hibernate.connection.characterEncoding: UTF-8
+hibernate.jdbc.time_zone: UTC
